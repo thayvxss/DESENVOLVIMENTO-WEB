@@ -1,0 +1,46 @@
+<!-- Criação de um Layout de Colunas com Float: Crie um layout com duas
+colunas usando a propriedade float. A coluna da esquerda deve ter 30%
+da largura e a da direita 70%. -->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout de Colunas com Float</title>
+    <style>
+        .container {
+            width: 100%;
+            overflow: hidden;
+            margin: 10px;
+        }
+
+        .left-column {
+            float: inline-start;
+            width: 30%;
+            background-color: #f0f0f0;
+        }
+
+        .right-column {
+            float: inline-end;
+            width: 70%;
+            background-color: #e0e0e0;
+            height: 135px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-column">
+            <h2>Coluna Esquerda</h2>
+            <p>Teste Teste Teste </p>
+        <div class="right-column">
+            <h2>Coluna Direita</h2>
+            <p>Teste Teste Teste </p>
+        </div>
+    </div>
+
+</body>
+</html>

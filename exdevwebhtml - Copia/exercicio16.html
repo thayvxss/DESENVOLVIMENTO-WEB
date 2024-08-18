@@ -1,0 +1,53 @@
+<!-- Criação de um Card de Perfil: Crie um card de perfil com uma imagem no
+topo, seguida de um nome e uma descrição. Estilize o card para ter bordas
+arredondadas e sombra. -->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card de Perfil</title>
+    <style>
+        .profile-card {
+            width: 300px; 
+            border-radius: 15px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            overflow: hidden; 
+            background-color: #fff; 
+            margin: 20px; 
+            text-align: center; 
+        }
+
+        .profile-card img {
+            width: 100%; 
+            height: auto; 
+            border-bottom: 1px solid #ddd; 
+        }
+
+        .profile-card .name {
+            font-size: 24px; 
+            font-weight: bold; 
+            margin: 15px 0 5px 0; 
+        }
+
+        .profile-card .description {
+            font-size: 16px; 
+            color: #666; 
+            margin: 0 15px 15px 15px; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <img src="https://miro.medium.com/v2/resize:fit:1400/1*g09N-jl7JtVjVZGcd-vL2g.jpeg" alt="Imagem de Perfil">
+        <div class="name">Nome do Usuário</div>
+        <div class="description">
+           Neste campo o usurário pode informar uma breve descrição dele.
+        </div>
+    </div>
+
+</body>
+</html>
