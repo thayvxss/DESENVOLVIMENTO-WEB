@@ -1,0 +1,44 @@
+<!-- Estilização de um Formulário: Crie um formulário simples com um campo de
+texto e um botão de envio. Estilize o campo de texto para ter uma borda de 2px
+sólida e o botão para ter uma cor de fundo verde. -->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Estilizado</title>
+    <style>
+        input[type="text"] {
+            border: 2px solid black; 
+            padding: 8px; 
+            width: 200px; 
+            font-size: 16px; 
+        }
+
+        button {
+            background-color: green; 
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            cursor: pointer; 
+            margin-top: 10px; 
+        }
+
+        button:hover {
+            background-color: darkgreen; 
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <label for="campo-texto">Digite algo:</label><br>
+        <input type="text" id="campo-texto" name="campo-texto"><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>

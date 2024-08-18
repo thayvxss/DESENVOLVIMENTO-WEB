@@ -1,0 +1,76 @@
+<!-- Criação de um Menu Vertical: Crie um menu vertical com quatro itens
+usando uma lista não ordenada (ul). Estilize o menu para que tenha uma
+largura fixa e uma cor de fundo diferente para cada item ao passar o
+mouse. -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Vertical</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif; 
+        }
+
+        .menu {
+            width: 200px; 
+            background-color: #333; 
+            padding: 10px; 
+            box-shadow: 0 2px 4px rgba(201, 94, 94, 0.2); 
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0; 
+            margin: 0; 
+        }
+
+        .menu li {
+            margin-bottom: 5px; 
+        }
+
+        .menu a {
+            display: block; 
+            padding: 10px; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 5px; 
+        }
+
+        .menu a:hover {
+            background-color: #555; 
+        }
+
+        .menu a:nth-child(1):hover {
+            background-color: #ff6666; 
+        }
+
+        .menu a:nth-child(2):hover {
+            background-color: #66b3ff; 
+        }
+
+        .menu a:nth-child(3):hover {
+            background-color: #99ff99; 
+        }
+
+        .menu a:nth-child(4):hover {
+            background-color: #ffcc66; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

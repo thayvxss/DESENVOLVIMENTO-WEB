@@ -1,0 +1,53 @@
+<!-- Criação de um Layout com Flexbox: Crie um layout com três caixas lado a
+lado utilizando Flexbox. Estilize as caixas para que tenham uma cor de fundo
+diferente e ocupem o mesmo espaço na tela. -->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com Flexbox</title>
+    <style>
+        body {
+            margin: 0; 
+            padding: 0; 
+            height: 100vh; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            background-color: #f0f0f0; 
+        }
+
+        .container {
+            display: flex; 
+            width: 80%; 
+            height: 200px; 
+        }
+
+        .box {
+            flex: 1; 
+            margin: 10px; 
+            color: white; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 18px; 
+            font-weight: bold; 
+        }
+
+        .box1 { background-color: #64d69b55; } 
+        .box2 { background-color: #d44bd625; } 
+        .box3 { background-color: #a98d1d; } 
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box box1">Caixa 1</div>
+        <div class="box box2">Caixa 2</div>
+        <div class="box box3">Caixa 3</div>
+    </div>
+
+</body>
+</html>
