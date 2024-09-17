@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Poppins para um visual moderno */
+}
+
+body{
+    height: 100vh;
+    background-color: #1e1e1e; /* Tom de cinza escuro mais sofisticado */
+    color: #f0f0f0; /* Texto claro para contraste */
+}
+
+nav.menu-lateral{
+    width: 60px; /* Ligeiramente mais largo para acomodar os ícones melhor */
+    height: 100%;
+    background-color: #34322F; /* Cor de fundo mais profunda e elegante */
+    padding: 40px 0 40px 10px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.7); /* Sombra mais suave para efeito de profundidade */
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out; /* Transição mais suave e rápida */
+}
+
+nav.menu-lateral.expandir{
+    width: 250px; /* Largura menor para não sobrecarregar a tela */
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: #ff0077; /* Destaque para o ícone */
+    font-size: 28px; /* Ícone ligeiramente maior para foco visual */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.btn-expandir > i:hover {
+    transform: rotate(90deg); /* Rotação ao passar o mouse, para dar dinamismo */
+}
+
+ul{
+    height: 100%;
+    list-style: none;
+    padding-left: 0; /* Melhor alinhamento dos itens do menu */
+}
+
+ul li.item-menu{
+    margin-bottom: 15px; /* Espaçamento entre os itens do menu */
+    transition: background-color 0.3s ease, padding-left 0.3s ease; /* Suavidade na transição */
+}
+
+ul li.item-menu:hover{
+    background: #ff0077;
+    padding-left: 10px; /* Efeito de deslizamento ao passar o mouse */
+}
+
+ul li.ativo {
+    background-color: #ff0077;
+    padding-left: 10px; /* Adiciona uma leve indentação no item ativo */
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; /* Tamanho de fonte um pouco menor, para ficar mais sofisticado */
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    line-height: 45px;
+    transition: color 0.3s ease; /* Suaviza a transição de cor */
+}
+
+ul li.item-menu a:hover {
+    color: #fff;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    opacity: 0;
+    transition: margin-left 0.3s ease, opacity 0.3s ease; /* Suavidade na transição do texto */
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 20px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 24px;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+}
+
+ul li.item-menu:hover a .icon > i {
+    color: #fff;
+}
+
